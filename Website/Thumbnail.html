@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thumbnail</title>
+	<link href="THUMP.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<nav class="nav">
+			<div class="A">
+				<!-- Wrapper div for logo and navbar -->
+				<img src="logo1.jpg" alt="Logo" class="logo">
+				<!-- Logo goes here -->
+			</div>
+			<ul class="navbar">
+				<li><a href="Home.html"> Home </a></li>
+				<li><a href="Query.html"> Query </a></li>
+				<li><a href="s-Mart.html"> S-Mart </a></li>
+				<li><a href="SiteMap.html" class="active"> Sitemap </a></li>
+				<li><a href="Quiz.html"> Quiz </a></li>
+				<li><a href="Thumbnail.html" class="active"> Gallery </a></li>
+				<li><a href="All.html"> All </a></li>
+				<li><a href="StuDe.html"> Student Details </a></li>
+			</ul>
+		</nav>
+		<p class="contain3">STUDENT_4</p>
+		<img src="logo.png" alt="Logo" class="logo2">
+		<p class="head">CHAMPIONS OF FIFA WORLD CUP<BR>1986-2022</p>
+		<h4><a href="pageEditor.html" style="color:red">Page Editer</a></h4>
+		<div class="contain1">
+			<button onclick="changeColorScheme(1)" class="button1"></button><br>
+			<button onclick="changeColorScheme(2)" class="button2"></button><br>
+			<button onclick="changeColorScheme(3)" class="button3"></button><br>
+		</div>
+		  
+		<div class="contain2">
+			<button onclick="changeFontSize(14)" class="button4">A</button>
+			<button onclick="changeFontSize(16)" class="button5">A</button>
+			<button onclick="changeFontSize(18)" class="button6">A</button>
+		</div>
+	</div>
+	<div class="top-gallery">
+		<div class="gallery-item" onclick="displayImage('w2022.jpg', '2022','The highly anticipated FIFA World Cup 2022 took place in Qatar, captivating football fans worldwide. The tournament spanned from November 21 to December 18, 2022, witnessing thrilling matches and incredible performances. In a showdown of talent and skill, Argentina emerged as the champions, lifting the prestigious trophy. France displayed remarkable resilience, finishing as the worthy runners-up. Among the individual accolades, Kylian Mbappe of France secured the Golden Boot award as the top goal-scorer, while Lionel Messi, the maestro from Argentina, was honored with the coveted Golden Ball for his exceptional contributions throughout the tournament. The event left a lasting impression and celebrated the beautiful game at its finest.')">
+			<div class="description">2022<br>(ARGENTINA)</div>
+			<img src="w2022.jpg" alt="Image 1" class="gallery-item img">
+		</div>
+		<div class="gallery-item" onclick="displayImage('w2018.jpg', '2018',' The FIFA World Cup 2018 took place in Russia, captivating football fans worldwide. The tournament spanned from June 14 to July 15, 2018, featuring teams from across the globe competing for glory. France emerged triumphant, displaying remarkable skill and teamwork, securing their second World Cup victory. Croatia showcased exceptional talent and determination as the runner-up, capturing the worlds admiration. Harry Kane of England claimed the Golden Boot with six goals, finishing as the tournaments top scorer. Meanwhile, the coveted Golden Ball award, recognizing the best player, was presented to Croatias midfield maestro, Luka Modrić, for his outstanding performances throughout the event.')">
+			<div class="description">2018<br>(FRANCE)</div>
+			<img src="w2018.jpg" alt="Image 2" class="gallery-item img">
+		</div>
+		<div class="gallery-item" onclick="displayImage('w2014.jpg', '2014','The FIFA World Cup 2014 was held in Brazil, captivating football fans around the globe. The tournament took place from June 12 to July 13, 2014, featuring fierce competition among top teams. In a thrilling final match, Germany emerged victorious, clinching the championship title. Argentina displayed incredible determination but ended up as the runner-up. James Rodríguez shone brightly, claiming the Golden Boot award for being the top goal-scorer with his remarkable performances. Lionel Messi, Argentina talismanic captain, was honored with the prestigious Golden Ball award for his exceptional skills and influential presence throughout the tournament. The event was a celebration of football excellence and unforgettable moments.')">
+			<div class="description">2014<br>(GERMANY)</div>
+			<img src="w2014.jpg" alt="Image 3" class="gallery-item img">
+		</div>
+		<div class="gallery-item" onclick="displayImage('w2010.jpg', '2010','The FIFA World Cup 2010 took place in South Africa, marking the first time the prestigious tournament was hosted on the African continent. The tournament period spanned from June 11 to July 11, 2010, captivating football fans worldwide with its thrilling matches. In the final, Spain emerged as the champions, showcasing their exceptional skills and tactical prowess, defeating the Netherlands in a hard-fought encounter to claim the title. The Golden Boot award was won by Thomas Müller from Germany for his impressive goal-scoring performance, while the Golden Ball was awarded to Diego Forlán from Uruguay, recognizing his outstanding contributions as the best player of the tournament.')">
+			<div class="description">2010<br>(SPAIN)</div>
+			<img src="w2010.jpg" alt="Image 4" class="gallery-item img">
+		</div>
+		<div class="gallery-item" onclick="displayImage('w2006.jpg', '2006','The FIFA World Cup 2006 took place in Germany, captivating football fans worldwide. The tournament spanned from (tournament period dates) and witnessed a thrilling final showdown between Italy and France. Italy emerged as the champions, displaying exceptional teamwork and skill on the field. The runner-up was France, who put up a valiant fight throughout the tournament. Miroslav Klose was awarded the prestigious Golden Boot for being the tournaments top goal-scorer. Meanwhile, the Golden Ball, given to the best player, was bestowed upon the iconic French midfielder, Zinedine Zidane, for his outstanding performances throughout the competition. The World Cup showcased extraordinary talent and left a lasting impact on football history.')">
+			<div class="description">2006<br>(ITALI)</div>
+			<img src="w2006.jpg" alt="Image 5" class="gallery-item img">
+		</div>
+	</div>	
+	<div class="middle-gallery"><!--ssource code: https://codepen.io/ludmila-tretyakova/pen/bGNppGG-->
+		<img id="selectedImage" class="selected-image" src="wcup.jpg" alt="Selected Image">
+		<div id="selectedImageDescription" class="description"></div>
+		<div class="div-content">
+			<div><img src="logo.png" class="logo3" alt="logo3"></div>
+			<div class="imgContent">
+				The FIFA World Cup, held every four years, stands as one of the most anticipated and celebrated sporting events globally. Organized by FIFA, the international governing body of football, the tournament brings together 32 of the world's top national teams, competing for football supremacy. With a rich history dating back to its inaugural edition in 1930, the World Cup has become a symbol of unity and passion, transcending borders and cultures.
+				<br>The event showcases awe-inspiring displays of skill, teamwork, and sportsmanship, captivating billions of spectators worldwide. Host countries invest significant resources in state-of-the-art stadiums and infrastructure to provide a memorable experience for fans and participants alike.
+			</div>
+		</div>
+	</div>
+	<div class="bottom-gallery">
+		<div class="gallery-item" onclick="displayImage('w2002.jpg', '2002','The FIFA World Cup 2002 took place in South Korea and Japan, captivating the world with its footballing extravaganza. The tournament spanned from May 31 to June 30, 2002, featuring intense matches and remarkable performances. Brazil emerged victorious, securing their fifth World Cup title with a display of skillful and exhilarating football. The runner-up was Germany, who put up a strong fight throughout the competition. Ronaldo, the Brazilian forward, earned the prestigious Golden Boot award for being the tournaments top scorer. The Golden Ball accolade went to Oliver Kahn, the outstanding German goalkeeper, who showcased exceptional talent and was a vital asset for his team.')">
+			<img src="w2002.jpg" alt="Image 6" class="gallery-item img">
+			<div class="description">2002<br>(BRAZIL)</div>
+		</div>
+		<div class="gallery-item" onclick="displayImage('w1998.jpg', '1998','The FIFA World Cup 1998 took place in France, bringing together top football teams from around the globe. The tournament period spanned from (insert start date) to (insert end date), and it was a spectacle of skill and passion for football enthusiasts. In the ultimate showdown, France emerged victorious, clinching the championship title. The talented Brazilian team secured the runner-up position, displaying their formidable gameplay. Individual brilliance was also celebrated, with Davor Šuker earning the prestigious Golden Boot award for being the top goal-scorer of the tournament. Ronaldos exceptional performances earned him the Golden Ball award, recognizing him as the tournaments best player. The 1998 World Cup will forever be etched in football history as a remarkable display of sporting excellence and national pride.')">
+			<img src="w1998.jpg" alt="Image 7" class="gallery-item img">
+			<div class="description">1998<br>(FRANCE)</div>
+		</div>
+		<div class="gallery-item" onclick="displayImage('w1994.jpg', '1994','The FIFA World Cup 1994 was hosted in the United States, captivating football fans worldwide. The tournament took place from June 17 to July 17. In an intense final match, Brazil emerged victorious, clinching the championship title. Italy fought valiantly but settled for the runner-up position. Oleg Salenko from Russia and Hristo Stoichkov from Bulgaria shared the Golden Boot award for being the tournaments top goal-scorers. Brazils Romário was rightfully honored with the Golden Ball award, recognizing him as the standout player of the competition, showcasing exceptional talent and leading his team to glory.')">
+			<img src="w1994.jpg" alt="Image 8" class="gallery-item img">
+			<div class="description">1994<br>(BRAZIL)</div>
+		</div>
+		<div class="gallery-item" onclick="displayImage('w1990.jpg', '1990','The FIFA World Cup in 1990 took place with excitement and fervor, where top teams clashed on the grand stage. The tournament was hosted in (Venue). From (Tournament Period), the world witnessed remarkable performances by teams and players alike. In the end, West Germany emerged as the champions, showcasing their football prowess and determination. Argentina fought valiantly and secured the runner-up position. Salvatore Schillaci from Italy was awarded the prestigious Golden Boot for being the top goal-scorer, and he also earned the Golden Ball for his outstanding overall performance throughout the competition. The FIFA World Cup 1990 left lasting memories of skillful displays and unforgettable moments on the football field.')">
+			<img src="w1990.jpg" alt="Image 9" class="gallery-item img">
+			<div class="description">1990<br>(GERMANY)</div>
+		</div>
+		<div class="gallery-item" onclick="displayImage('w1986.jpg', '1986','The FIFA World Cup of 1986 was held in Mexico as the host venue. The tournament took place from May 31 to June 29, captivating football fans worldwide. In a memorable final match, Argentina emerged as the champions, defeating West Germany in a hard-fought contest. Throughout the competition, Gary Linekers exceptional goal-scoring prowess earned him the prestigious Golden Boot award. Meanwhile, the Argentine legend Diego Maradona was rightfully honored with the Golden Ball award, showcasing his extraordinary skills and impact on the tournament. The 1986 World Cup will forever be remembered for these remarkable performances and the enthralling display of football talent on the grandest stage.')">
+			<img src="w1986.jpg" alt="Image 10" class="gallery-item img">
+			<div class="description">1986<br>(ARGENTINA)</div>
+		</div>
+	</div>
+	<script src="TH.js"></script>
+</body>
+</html>

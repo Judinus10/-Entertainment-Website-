@@ -1,0 +1,152 @@
+/*body css*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+.bg {
+/* The image used */
+	background-image: url("background.jpg");
+	background-size: cover;/*for cover the full page with image*/
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*navbar css*/
+.nav{
+	position: fixed;
+	width: 100%;
+	background-color:#222f3e;
+	height: 50px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+.navbar{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	list-style-type: none;
+	text-align: center;
+	padding-left: 40px;
+	margin: 16px auto;
+}
+.navbar>li{
+	display: inline-block;    
+}
+
+.navbar>li>a{
+	display: inline-block;
+	font-size: 16px;
+	font-weight:500px;
+	margin-right: 45px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.navbar > li > a:hover {
+	border: 2px solid #ff0000;
+	background-color: #ff0000;
+	color: #ffffff;
+	   padding: 5px 10px;
+	border-radius: 4px;
+}
+
+body {
+	margin: 0px;
+}
+
+.A {
+	float: left;
+}
+
+.navbar>li>a.active{
+	text-decoration: underline;
+}
+
+.logo {
+	width:100px;
+	/* Set the width and height of your logo accordingly */
+	height: 50px;
+	margin-right: 20px;
+	/* Add some space between the logo and the navbar items */
+}
+
+/*for heading(sitemap) css*/
+.heading{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+		padding: 10px;
+		height: 30vh;
+}
+.headText{
+	text-align:center;
+	margin-top:200px;
+	font-size:50px;
+	color: black;
+}
+
+/*svg css*/
+svg {
+	display: block;
+	margin: 20px auto;
+}
+.svg{
+	background-image:url("svgback.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+/*line css in svg*/
+
+.link {
+	fill: none;
+	stroke:black;
+	stroke-width: 5px;
+}
+.text {
+	font-family: Arial, sans-serif;
+	fill: rgb(17, 17, 17);
+	font-size:14px;
+}
+.circle {
+	stroke:black;
+	stroke-linecap: butt;
+	stroke-width: 5px;
+}
+/*link effect css*/
+a:link circle {
+	stroke:black;
+	stroke-width: 5;
+}
+a:visited circle {
+	stroke:#df0c0c;
+	stroke-width: 5;
+}
+a:hover circle {
+	stroke:#f47106;
+	stroke-width: 5;
+}
+a:active circle {
+	stroke:#c4f905;
+	stroke-width:5;
+}
+a:link text {
+	fill: #050a50;
+}
+a:visited text {
+	fill: #df0c0c;
+}
+a:hover text {
+	fill: #f47106;
+}
+a:active text {
+	fill: #c4f905;
+}
+.page{
+	position: fixed; 
+	top:360px; 
+	right: 20px;
+}

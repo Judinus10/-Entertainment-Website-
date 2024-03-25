@@ -1,0 +1,37 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+.adjustment1 {
+    text-align: center;
+    background-color: #FFC4D0;
+    height:100px;
+    width:100%;
+    padding-top:5%;
+}
+.adjustment2 {
+    text-align: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    width:100%;
+}
+.adjustment3 {
+    text-align: center;
+    background-color: #FFC4D0;
+    height:800px;
+    width:100%;
+}
+.space {
+    padding-top: 50px;
+    font-size: 22px;
+    height:150px;
+    width:100%;
+}
+p{
+    line-height:32px;
+}
+#top{
+    margin-top: 130px;
+}

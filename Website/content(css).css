@@ -1,0 +1,172 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #dcd9d9;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+/*navbar css*/
+/*navbar css*/
+.nav{
+	position:absolute;
+	width: 100%;
+	background-color:#222f3e;
+	height: 50px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+.navbar{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	list-style-type: none;
+	text-align: center;
+	padding-left: 40px;
+	margin: 16px auto;
+}
+.navbar>li{
+	display: inline-block;    
+}
+
+.navbar>li>a{
+	display: inline-block;
+	font-size: 16px;
+	font-weight:500px;
+	margin-right: 45px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.navbar > li > a:hover {
+	border: 2px solid #ff0000;
+	background-color: #ff0000;
+	color: #ffffff;
+	   padding: 5px 10px;
+	border-radius: 4px;
+}
+
+body {
+	margin: 0px;
+}
+
+.A {
+	float: left;
+}
+
+.navbar>li>a.active{
+	text-decoration: underline;
+}
+
+.logo {
+	width:100px;
+	/* Set the width and height of your logo accordingly */
+	height: 50px;
+	margin-right: 20px;
+	/* Add some space between the logo and the navbar items */
+}
+
+
+.top-div {
+    background-color: #dcd9d9;
+    padding:150px;
+    text-align: center;
+    font-size:32px;
+    font-weight: bold;
+    color: #333;
+    height:200px;
+    width:100%;
+    align-items:flex-end;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {   /*for main div tag*/
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: right;
+}
+
+.container .box {/* for sub div and main div*/
+    position: relative;
+    width: 480px;
+    height: 400px;
+    margin: 64px;
+}
+
+.container .box:hover .imgBox {/*for main div sub div and image div*/
+    transform: translate(-3.5rem, -3.5rem);
+}
+
+.container .box:hover .content {
+    transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {/*for images (div)*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.imgBox img {/*for images*/
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    resize: both;
+}
+
+.content {/*for data div*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+    align-items: flex-end;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+.content h2 {/* for names*/
+    display: block;
+    font-size:24px;
+    color: #111;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.content span {/*for sub detain*/
+    color: #555;
+    font-size:20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+h3{
+    margin-left:45%;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+.container .box:hover .content {
+    transform: translate(0, 3.5rem);
+}
+.container .box:hover .imgBox {
+    transform: translate(0, -3.5rem);
+}
+}
+/*source code from :https://codepen.io/_niikhil/pen/MWpeqby*/
+/*# sourceMappingURL=main.css.map */
